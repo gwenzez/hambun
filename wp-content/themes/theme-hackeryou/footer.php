@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; Gwen <?php echo date('Y'); ?></p>
+    <p>&copy; <?php bloginfo( 'name', 'display' ); ?> <?php echo date('Y'); ?></p>
   </div>
 </footer>
 
