@@ -170,104 +170,80 @@ img.alignright {
                    Default Styling
    ========================================================================== */
 body {
-  color: #fff; }
+  color: #000;
+  background: #F7F6EF;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+h1 {
+  font-size: 25px; }
+
+h2 {
+  font-size: 10px; }
+
+h2.entry-title {
+  font-size: 50px; }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto; }
-
-.content {
-  float: left;
-  width: 65%;
-  margin-right: 5%; }
-
-.full {
-  width: 100%; }
 
 /* links */
 a {
-  color: #BA209B;
+  color: #000;
   text-decoration: none; }
 
 a:hover {
-  color: #D424B1; }
+  color: #70706E; }
 
 /* paragraphs */
 p {
   line-height: 1.5; }
 
-/*blockquotes*/
-blockquote {
-  background: #F7F7F7;
-  margin: 0;
-  padding: 20px; }
-
-blockquote p {
-  margin-top: 0; }
-
-/*tables*/
-table td {
-  padding: 10px; }
-
-table tr td:first {
-  padding-right: 0; }
-
-/*def lists*/
-dt {
-  font-weight: 600;
-  padding-bottom: 5px; }
-
-dd {
-  padding: 10px;
-  margin-left: 10px; }
-
-/*lists*/
-ul li, ol li {
-  padding: 3px; }
-
-/*PRE*/
-pre {
-  background: #F7F7F7;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc; }
-
 /* =============================================================================
-                   Sidebar
+                   Header
    ========================================================================== */
-.sidebar {
-  width: 30%;
+header {
+  background: #FDFDF9; }
+
+header div {
+  width: 33.33%;
   float: left; }
-
-.sidebar ul {
-  margin: 0;
-  padding: 0; }
-
-.sidebar ul li {
-  list-style: none; }
 
 /* =============================================================================
                    Footer
    ========================================================================== */
 footer {
-  clear: both; }
+  clear: both;
+  background: #FDFDF9; }
 
 /* =============================================================================
                    Navigation
    ========================================================================== */
-ul.menu {
+.nav {
+  margin: 0 0 0 5%;
+  padding: 0; }
+  .nav li {
+    list-style-type: none;
+    text-align: left; }
+    .nav li a {
+      font-size: 10px; }
+
+.social {
   margin: 0;
   padding: 0; }
+  .social li {
+    list-style-type: none;
+    float: right; }
+    .social li a {
+      font-size: 10px; }
 
-ul.menu li {
-  display: inline;
-  margin-right: 10px; }
-
-ul.menu li a {
-  color: #333;
-  padding: 10px;
-  background: #333;
-  color: white; }
+/* =============================================================================
+                   Blog
+   ========================================================================== */
+.entry-content {
+  width: 50%;
+  margin: 0 auto; }
 
 /* =============================================================================
                    Comment Styling
