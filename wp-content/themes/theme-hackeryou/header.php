@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+  <div class="container top">
     <div class="nav"
       <?php wp_nav_menu( array(
         'container' => false,
