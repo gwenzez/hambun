@@ -9,7 +9,7 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>
 
@@ -18,16 +18,30 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo('name'); ?>
-      </a>
-    </h1>
+    <div class="nav"
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </div>
+    <div class="title">
+      <h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo('name'); ?>
+        </a>
+      </h1>
+      <h2>
+        <?php echo get_bloginfo ( 'description' );  ?>
+      </h2>
+    </div>
+    <div class="social">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'social'
+      )); ?>
+    </div>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
+    
   </div> <!-- /.container -->
 </header><!--/.header-->
 
