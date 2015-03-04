@@ -176,10 +176,15 @@ body {
   text-align: center; }
 
 h1 {
-  font-size: 25px; }
+  padding-top: 25px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 0; }
 
 h2 {
-  font-size: 10px; }
+  font-size: 10px;
+  clear: both;
+  letter-spacing: 2px; }
 
 h2.entry-title {
   font-size: 50px; }
@@ -203,26 +208,25 @@ p {
 /* =============================================================================
                    Header
    ========================================================================== */
-header {
-  background: #FDFDF9; }
+.top {
+  height: 125px;
+  background: #FDFDF9;
+  margin: 0; }
 
 header div {
   width: 33.33%;
   float: left; }
 
-/* =============================================================================
-                   Footer
-   ========================================================================== */
-footer {
-  clear: both;
-  background: #FDFDF9; }
+.title {
+  text-transform: uppercase; }
 
 /* =============================================================================
                    Navigation
    ========================================================================== */
 .nav {
-  margin: 0 0 0 5%;
-  padding: 0; }
+  margin: 0;
+  padding-left: 5%;
+  padding-top: 10px; }
   .nav li {
     list-style-type: none;
     text-align: left; }
@@ -231,12 +235,27 @@ footer {
 
 .social {
   margin: 0;
-  padding: 0; }
+  padding-right: 5%;
+  padding-top: 34px; }
   .social li {
     list-style-type: none;
-    float: right; }
+    float: right;
+    margin-left: 10px; }
     .social li a {
-      font-size: 10px; }
+      font-size: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      text-indent: -9999px;
+      background-image: url(img/iconmonstr-pinterest-icon.svg);
+      background-size: cover; }
+      .social li a[href*="facebook"] {
+        background-image: url(img/iconmonstr-facebook-icon.svg); }
+      .social li a[href*="twitter"] {
+        background-image: url(img/iconmonstr-twitter-icon.svg); }
+
+.nav .current_page_item {
+  text-decoration: underline; }
 
 /* =============================================================================
                    Blog
@@ -416,3 +435,17 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
   margin: 0; }
+
+/* =============================================================================
+                   Footer
+   ========================================================================== */
+footer {
+  clear: both; }
+
+footer .container p {
+  padding-top: 40px;
+  font-size: 10px; }
+
+.bottom {
+  background: #FDFDF9;
+  height: 100px; }
