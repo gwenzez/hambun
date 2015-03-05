@@ -16,7 +16,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header class="clearfix">
   <div class="container top">
     <div class="nav"
       <?php wp_nav_menu( array(
