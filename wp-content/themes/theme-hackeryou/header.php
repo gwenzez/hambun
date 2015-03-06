@@ -16,6 +16,8 @@
 
 <body <?php body_class(); ?>>
 
+
+
 <header class="clearfix">
   <div class="container top">
     <div class="nav"
@@ -44,4 +46,5 @@
     
   </div> <!-- /.container -->
 </header><!--/.header-->
+<div class="wrapper">
 

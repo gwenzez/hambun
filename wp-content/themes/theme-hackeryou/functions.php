@@ -267,3 +267,11 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('read more', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+function custom_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
